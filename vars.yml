@@ -14,6 +14,6 @@
   tasks:
     - name: printing variable from file to url
       ansible.builtin.debug:
-        msg: URL == {{URL_1}}
+        msg: URL == {{URL}}
 
 
