@@ -1,3 +1,3 @@
-- name: printing variable from file to url
+- name: printing variable Using Roles to url
   ansible.builtin.debug:
     msg: URL == {{ URL_2 }}
