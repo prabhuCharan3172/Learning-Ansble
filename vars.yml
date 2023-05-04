@@ -15,5 +15,27 @@
     - name: printing variable from file to url
       ansible.builtin.debug:
         msg: URL == {{ URL }}
+- name: Demo on inventory variables
+  hosts: all
+  tasks:
+    - name: printing variable from file to url
+      ansible.builtin.debug:
+        msg: URL == {{ URL }}
+
+- name: Demo on task variables
+  hosts: all
+  tasks:
+    - name: printing variable from file to url
+      vars:
+        URL: task.example.com
+      ansible.builtin.debug:
+        msg: URL == {{ URL }}
+##variables declared on terminal have more precedence than on task or inventory or on play level
+- name: Demo on terminal variables
+  hosts: all
+  tasks:
+    - name: printing variable from file to url
+      ansible.builtin.debug:
+        msg: URL == {{ URL }}
 
 
