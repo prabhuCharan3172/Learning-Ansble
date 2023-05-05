@@ -1,0 +1,16 @@
+- name: Conditional statements
+  hosts: all
+  vars:
+    redhat: true
+    debian: false
+  tasks:
+    - name: Run if redhat family
+      when : redhat or ansible_os_family == "Redhat"
+      ansible.builtin.debug:
+        msg: This is a Redhat OS
+
+    - name: Run if debian family
+      when: debian or ansible_os_family == "Debian"
+      ansible.builtin.debug:
+        msg: This is a Debian OS
+
