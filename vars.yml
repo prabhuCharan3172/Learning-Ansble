@@ -35,5 +35,15 @@
   hosts: all
   roles:
     - sample
+- name: Using Shell command and registring or storing command output
+  hosts: all
+  tasks:
+    - name: Get uptime
+      ansible.builtin.shell: uptime
+      register: Shell_Output
+    - name: Printing shell command
+      ansible.builtin.debug:
+        msg: "{{ Shell_Output }}"
+
 
 
