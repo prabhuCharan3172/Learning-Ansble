@@ -43,7 +43,7 @@
       register: Shell_Output
     - name: Printing shell command
       ansible.builtin.debug:
-        msg: "{{ Shell_Output }}"
+        msg: "{{ Shell_Output.stdout }}"
 
 
 
