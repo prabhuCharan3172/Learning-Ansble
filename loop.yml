@@ -1,0 +1,15 @@
+- name: Loops statements
+  hosts: all
+  tasks:
+    - name: printing items
+      ansible.builtin.debug:
+        msg: Item = {{item}}
+        loop:
+          - apple
+          - banana
+    - name: printing items from mapping
+      ansible.builtin.debug:
+        msg: Item name= {{item.name}}, Quantity = {{item.qty}}
+        loop:
+          - {name: apple,qty: 10}
+          - {name: banana,qty: 12}
