@@ -10,4 +10,5 @@
 
     - name: printing comparisioins with filters
       ansible.builtin.debug:
-        msg: X - "{{ x | int < 5 }}" is less than 5
+        msg: X  is less than 5
+      when:  x | int < 5
