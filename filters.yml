@@ -1,0 +1,13 @@
+- name: USing filters
+  hosts: all
+  vars:
+    Name: PRABHU CHARAN
+    x: 3
+  tasks:
+    - name: printing with filters
+      ansible.builtin.debug:
+        msg: Name in small letters is - "{{ Name | lower }}"
+
+    - name: printing comparisioins with filters
+      ansible.builtin.debug:
+        msg: X - "{{ x | < 5 }}" is less than 5
