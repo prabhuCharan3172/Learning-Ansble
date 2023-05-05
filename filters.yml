@@ -2,7 +2,7 @@
   hosts: all
   vars:
     Name: PRABHU CHARAN
-    x: 3
+    x: 6
   tasks:
     - name: printing with filters
       ansible.builtin.debug:
