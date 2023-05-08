@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/../Aws-cli-infra-roboshop/Aws-cli-infra-roboshop.iml" filepath="$PROJECT_DIR$/../Aws-cli-infra-roboshop/Aws-cli-infra-roboshop.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Learning-Ansble.iml" filepath="$PROJECT_DIR$/.idea/Learning-Ansble.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Shell-scripting/Shell-scripting.iml" filepath="$PROJECT_DIR$/../Shell-scripting/Shell-scripting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../roboshop-mutable-ansible/roboshop-mutable-ansible.iml" filepath="$PROJECT_DIR$/../roboshop-mutable-ansible/roboshop-mutable-ansible.iml" />
     </modules>
   </component>
 </project>
